@@ -1,25 +1,28 @@
-$primary:#337D58;
-$secondary:#43546A;
-$tertiary:#92705D;
-$green:#337D58;
-$gold:#9D863B;
+$primary:#49762A;
+$secondary:#81BC00;
+$tertiary:#A8C241;
+$purple:#665DC6;
+$darkblue:#000F9F;
+$blue:#006073;
+$gold:#F4B324;
 $sand:#CCBE9E;
-$blue:#43546A;
 $mint:#BDDCC8;
 $sage:#BFC2A8;
-$lightblue:#E9EEF5;
-$darkblue:#034165;
-$lato: "Lato",
-sans-serif;
-$popins: "Poppins",
-sans-serif;
+$lightblue:#BFD7DC;
+$roboto: "Roboto", sans-serif;
+$nunito: "Nunito Sans", sans-serif;
 $black:#070B0F;
 $white:#ffffff;
-$gray:#4D4D50;
-$lightgray:#EEEEEE;
+$gray:#414141;
+$lightgray:#eee;
 $darkgray:#A8A8A8;
-$red:#B61717;
+$red:#D0343A;
+$orange:#E75402;
 $border-color:#DCE0E6;
+$green:#000;
+
+$default_bg:#fff;
+$primary_bg:#F6F4F1;
 // color paltte - 
 $colors:( "primary":$primary, "secondary":$secondary, "green":#337D58, "black":#000000, "lightgray":#EEEEEE, "blue":#156CB7, "darkblue": #034165, "gold":#9D863B, "sand":#CCBE9E, "mint":#BDDCC8);
 .test-btn {

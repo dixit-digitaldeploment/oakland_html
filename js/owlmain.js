@@ -11,8 +11,8 @@ $('.owl-general .owl-carousel').owlCarousel({
 	 autoWidth:true,
 	 items: 1,
     navText: [
-        '<img src="/img/chevron-left.svg">',
-        '<img src="/img/chevron-left.svg">'
+        '<img src="/./img/chevron-left.svg">',
+        '<img src="/./img/chevron-left.svg">'
     ],
     navContainer: '.owl-general .custom-nav',
     /*responsive:{
