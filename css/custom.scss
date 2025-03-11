@@ -321,6 +321,8 @@ label.title {
   @include roboto;
   font-size: 16px;
   color: $black;
+  margin-bottom: 8px;
+  line-height: normal;
 }
 
 ::-webkit-input-placeholder {
@@ -1384,7 +1386,7 @@ label.title {
 }
 
 .top-Title {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   align-items: center;
   h2 {
     margin-bottom: 0px;
@@ -1679,7 +1681,7 @@ label.title {
         }
       }
     }
-    @media screen and (max-width :767px) {
+    @media screen and (max-width: 767px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -1693,15 +1695,15 @@ label.title {
       font-weight: 400;
       line-height: normal;
       color: #000;
-      a{
+      a {
         font-size: inherit;
         color: inherit;
         text-decoration: none;
         font-weight: inherit;
       }
     }
-    @media screen and (max-width:767px) {
-     text-align: left;
+    @media screen and (max-width: 767px) {
+      text-align: left;
     }
   }
   .container {
@@ -1712,8 +1714,6 @@ label.title {
     }
   }
 }
-
-
 
 //Page builder starts
 .gray,
@@ -1847,8 +1847,8 @@ label.title {
 }
 
 .page_title {
-  padding-top: 40px !important;
-  padding-bottom: 30px !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1858,6 +1858,7 @@ label.title {
     position: relative;
     z-index: 9;
     display: table;
+    margin: 0;
   }
 }
 
@@ -2724,15 +2725,15 @@ h2 + .expand_img_grid {
   max-width: 800px;
   margin: auto;
   h1 {
-    font-size: 130px;
-    margin-bottom: 20px;
+    font-size: 74px;
+    margin-bottom: 24px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .btn_sm {
     min-width: 180px;
-    margin-top: 20px;
+    margin-top: 24px;
   }
   .search404 {
     max-width: 345px;
@@ -2813,7 +2814,7 @@ h2 + .expand_img_grid {
 /* result page start */
 
 .page_title.resut_title {
-  padding-bottom: 10px !important;
+  // padding-bottom: 10px !important;
 }
 
 .main_search_content {
@@ -2821,17 +2822,18 @@ h2 + .expand_img_grid {
   justify-content: center;
   align-items: center;
   background: $white;
-  padding: 15px 15px 40px 15px;
+  padding: 32px 0;
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
   .h5 {
     margin-right: 0px;
-    margin-bottom: 15px;
-    font-family: $nunito;
-    font-size: 20px;
-    font-weight: 600;
-    color: $gray;
+    margin-bottom: 16px;
+    font-family: $roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   .search_box {
     margin-bottom: 0px;
@@ -2929,9 +2931,9 @@ h2 + .expand_img_grid {
 }
 
 .rslt_txt {
-  padding: 40px 0px 30px 0px;
+  padding: 40px 0px 40px 0px;
   margin: auto;
-  background: $lightgray;
+  background: $primary_bg;
   .container {
     max-width: 900px;
   }
@@ -2942,10 +2944,10 @@ h2 + .expand_img_grid {
 
 .acc__card {
   margin-bottom: 10px;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
   background: $white;
+  overflow: hidden;
 }
 
 .acc__title {
@@ -2953,7 +2955,7 @@ h2 + .expand_img_grid {
   display: flex;
   align-items: center;
   min-height: 55px;
-  padding: 10px 24px;
+  padding: 16px;
   border: 0;
   padding-right: 40px;
   cursor: pointer;
@@ -2961,9 +2963,11 @@ h2 + .expand_img_grid {
   border-radius: 0px;
   h3 {
     margin: 0px;
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    color: #43546a;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    color: $blue;
   }
   .h4 {
     margin-bottom: 0px;
@@ -2982,12 +2986,16 @@ h2 + .expand_img_grid {
   &.active {
     .acco_sign img {
       transform: rotate(180deg);
-      filter: brightness(0) saturate(100%) invert(46%) sepia(26%) saturate(472%) hue-rotate(337deg) brightness(95%)
-        contrast(89%);
+      // filter: brightness(0) saturate(100%) invert(46%) sepia(26%) saturate(472%) hue-rotate(337deg) brightness(95%)
+      //   contrast(89%);
     }
   }
   &:hover {
-    background: #cbcdbe;
+    // background: #cbcdbe;
+    h3 {
+      text-decoration: underline;
+      color: $primary;
+    }
     .acco_sign {
       img {
       }
@@ -2998,9 +3006,11 @@ h2 + .expand_img_grid {
 .acc__panel {
   display: none;
   border-top: 0;
-  padding: 10px 25px;
+  padding: 8px 24px 32px;
   background: #fff;
-  padding-top: 8px;
+  p:last-child {
+    margin: 0;
+  }
   .links_wrap a {
     font-size: 16px;
   }
@@ -3021,29 +3031,37 @@ h2 + .expand_img_grid {
 }
 
 .result_row {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border-radius: 0px;
   position: relative;
+  border-radius: 5px;
+  background: $white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px;
   h3,
   h4,
   h5,
   h2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: $blue;
   }
   .re_category {
+    // font-weight: 700;
+    // background: #bddcc8;
+    // font-size: 16px;
+    // font-family: "Lato", sans-serif;
+    // color: #4d4d50;
+    // padding: 5px 12px;
+    // display: inline-block;
+    @include meta;
     font-weight: 700;
-    background: #bddcc8;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #4d4d50;
-    padding: 5px 12px;
-    display: inline-block;
+    color: #000;
   }
   .rsltBody {
-    padding: 15px;
+    // padding: 15px;
   }
   > a {
     display: block;
@@ -3051,9 +3069,13 @@ h2 + .expand_img_grid {
     color: $black;
     font-weight: normal;
   }
+  p:last-child {
+    margin: 0;
+  }
   &:hover {
     h3 {
       text-decoration: underline;
+      color: $primary;
     }
   }
 }
@@ -3072,6 +3094,11 @@ h2 + .expand_img_grid {
     select {
       min-width: 220px;
     }
+    @media screen and (min-width:768px) {
+      .sort_group {
+        grid-column: 3;
+      }
+    }
     @include md {
       grid-template-columns: auto;
     }
@@ -3079,8 +3106,11 @@ h2 + .expand_img_grid {
 }
 
 .resull_filter {
-  padding: 35px 0px 40px 0px;
+  padding: 40px 0;
   .container {
+    > h2 {
+      margin-bottom: 24px;
+    }
   }
 }
 
