@@ -856,9 +856,9 @@
 						<div class="search-box">
 							<div class="search_input">
 								<form role="search" method="get" id="">
-									<label for="" class="title">Search</label>
+									<label for="search" class="title">Search</label>
 									<div class="input-group">
-										<input type="text" id="" class="form-control" placeholder="Search" name="s">
+										<input type="text" id="search" class="form-control" placeholder="Search" name="s">
 										<button class="btn btn-default" id="" type="submit">
 											<img src="./img/search-icon.svg" alt="search icon">
 										</button>
@@ -1133,28 +1133,6 @@
 	<script src="js/owl.carousel.min.js "></script>
 	<script src="js/owlmain.js "></script>
 	<script src="js/custom.js "></script>
-	<script>
-		(function ($) {
-			/* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
-
-			$('.acc__main .acc__title').click(function (j) {
-				var dropDown = $(this).closest('.acc__card').find('.acc__panel');
-
-				$(this).closest('.acc__main').find('.acc__panel').not(dropDown).slideUp();
-
-				if ($(this).hasClass('active')) {
-					$(this).removeClass('active');
-				} else {
-					$(this).closest('.acc__main').find('.acc__title.active').removeClass('active');
-					$(this).addClass('active');
-				}
-
-				dropDown.stop(false, true).slideToggle();
-
-				j.preventDefault();
-			});
-		})(jQuery);
-	</script>
 </body>
 
 </html>

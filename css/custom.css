@@ -31,7 +31,7 @@ h6,
 h1,
 .h1 {
   font-size: 54px;
-  font-weight: 800;
+  font-weight: 900;
   color: #070B0F;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -39,7 +39,7 @@ h1,
 h2,
 .h2 {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 900;
   color: #070B0F;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -47,7 +47,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 900;
   color: #070B0F;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -55,7 +55,7 @@ h3,
 h4,
 .h4 {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 800;
   color: #070B0F;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -377,7 +377,6 @@ label.title {
 .main_header .top_header_cont {
   margin-left: auto;
   z-index: 9;
-  padding-top: 8px;
 }
 .main_header .navbar ul {
   list-style: none;
@@ -427,7 +426,7 @@ label.title {
   padding-left: 20px;
 }
 .main_header .top_menu .top_inner_menu a {
-  color: #070B0F;
+  color: #414141;
   font-size: 15px;
   padding: 20px 12px;
   display: inline-block;
@@ -969,7 +968,7 @@ label.title {
   opacity: 1;
 }
 .main_banner h2 {
-  font-size: 52px;
+  font-size: 54px;
   color: #ffffff;
   line-height: normal;
   font-size: 900;
@@ -1073,28 +1072,34 @@ label.title {
   opacity: 0;
   display: none;
 }
-.nav_section .navcol .navBlock_col:hover {
+.nav_section .navcol .navBlock_col.active {
   background: #f6f4f1;
 }
-.nav_section .navcol .navBlock_col:hover .navblock_icon {
+.nav_section .navcol .navBlock_col.active .navblock_icon {
   display: none;
 }
-.nav_section .navcol .navBlock_col:hover h3 {
+.nav_section .navcol .navBlock_col.active h3 {
   color: #070B0F;
 }
-.nav_section .navcol .navBlock_col:hover > .read_more {
+.nav_section .navcol .navBlock_col.active > .read_more {
   display: none;
 }
-.nav_section .navcol .navBlock_col:hover .links_box {
+.nav_section .navcol .navBlock_col.active .links_box {
   height: 80px;
   opacity: 1;
   display: block;
 }
-.nav_section .navcol .navBlock_col:hover .links_box .read_more {
+.nav_section .navcol .navBlock_col.active .links_box .read_more {
   color: #070B0F;
 }
-.nav_section .navcol .navBlock_col:hover .links_box .read_more::after {
+.nav_section .navcol .navBlock_col.active .links_box .read_more::after {
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><mask id="mask0_8131_2915" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="black"/></mask><g mask="url(%23mask0_8131_2915)"><path d="M4 13L16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13Z" fill="black"/></g></svg>');
+}
+.nav_section .navcol .navBlock_col.active .links_box .read_more:hover {
+  text-decoration: underline;
+}
+.nav_section .navcol .navBlock_col.active .links_box .read_more:not(:last-child) {
+  margin-bottom: 13px;
 }
 @media screen and (max-width: 768px) {
   .nav_section {
@@ -1122,6 +1127,18 @@ label.title {
 .news-events .padding-40 {
   padding-right: 20px;
   padding-left: 20px;
+}
+@media (min-width: 1200px) {
+  .news-events .customCol-9 {
+    flex: 0 0 72%;
+    max-width: 72%;
+  }
+}
+@media (min-width: 1200px) {
+  .news-events .customCol-3 {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
 }
 .news-events .left a {
   text-decoration: none;
@@ -1465,6 +1482,9 @@ label.title {
 .footer {
   position: relative;
   background: #eee;
+}
+.footer a {
+  text-decoration: underline !important;
 }
 .footer .footer-content {
   display: grid;
@@ -2477,7 +2497,6 @@ h2 + .expand_img_grid {
   background: #ffffff;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1607843137);
   border: 1px solid #e8e9ea;
-  padding: 48px;
 }
 .expanding-grid .expanding-container.expanded,
 .expanding-grid .expanding-grid .expanding-container:target {
@@ -2511,6 +2530,7 @@ h2 + .expand_img_grid {
 .expanding-grid .expand-content {
   margin: 0 auto;
   max-width: 900px;
+  padding: 48px 0;
 }
 .expanding-grid .plus-minus_icon {
   position: relative;
@@ -2555,7 +2575,7 @@ h2 + .expand_img_grid {
   font-size: 24px;
 }
 .no-found-info .btn_sm {
-  min-width: 180px;
+  min-width: 155px;
   margin-top: 24px;
 }
 .no-found-info .search404 {
@@ -2802,6 +2822,10 @@ h2 + .expand_img_grid {
   text-decoration: underline;
   color: #49762A;
 }
+.acc__title:hover .acco_sign img {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(9%) saturate(3506%) hue-rotate(52deg) brightness(112%) contrast(74%);
+}
+
 .acc__panel {
   display: none;
   border-top: 0;

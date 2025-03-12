@@ -433,3 +433,18 @@ $(window).resize(function () {
     j.preventDefault();
   });
 })(jQuery);
+
+$(".navBlock_col > .read_more").on("click", function (e) {
+  e.preventDefault();
+  e.stopPropagation(); // Prevent event bubbling
+  let parent = $(this).closest(".navBlock_col");
+  $(".navBlock_col").not(parent).removeClass("active");
+  parent.addClass("active");
+});
+
+// Click anywhere on the document to remove the active class
+$(document).on("click", function (e) {
+  // if ($(e.target).hasClass("read_more") || !$(e.target).closest(".navBlock_col").length) {
+      $(".navBlock_col").removeClass("active");
+  // }
+});

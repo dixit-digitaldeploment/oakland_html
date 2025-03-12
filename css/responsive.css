@@ -127,7 +127,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #7A8080;
+    background-color: #7a8080;
     cursor: pointer;
     z-index: 100;
     left: 0px;
@@ -303,8 +303,8 @@
     margin-top: 0px;
   }
   .advgb-tabs-wrapper ul.advgb-tabs-panel li.advgb-tab.advgb-tab.advgb-tab-active {
-    border-right: 1px solid #B1ADAD !important;
-    border-left: 1px solid #B1ADAD !important;
+    border-right: 1px solid #b1adad !important;
+    border-left: 1px solid #b1adad !important;
   }
   .main_wrapper .advgb-tabs-wrapper.advgb-tab-horz-desktop ul.advgb-tabs-panel {
     flex-wrap: wrap;
@@ -559,7 +559,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
   .footer-content span.h3 {
     font-size: 16px;
-    color: #BDDCC8;
+    color: #bddcc8;
   }
   .footer-content .footer_left {
     padding-right: 20px;
@@ -800,7 +800,7 @@
   .main_header .navbar-nav > li.current_page_item > a,
   .main_header .navbar-nav > li.current-menu-item > a,
   .main_header .navbar-nav > li.current-page-ancestor > a {
-    color: #097F8E !important;
+    color: #097f8e !important;
   }
   .main_header .header_wrap {
     display: flex;
@@ -904,7 +904,8 @@
     -ms-transform: none;
     -o-transform: none;
     box-shadow: none;
-    background: none;
+    border: none !important;
+    background: none !important;
   }
   .plusMinus {
     position: absolute;
@@ -927,7 +928,7 @@
     right: 6px;
     font-weight: normal;
     font-size: 26px;
-    color: #7A8080;
+    color: #fff;
     /* background-image: url(.././img/select-arrow.svg);*/
   }
   .plusMinus.minsicon::after {
@@ -957,7 +958,7 @@
     right: 6px;
     font-weight: normal;
     font-size: 26px;
-    color: #7A8080;
+    color: #7a8080;
     /* background-image: url(.././img/select-arrow.svg);*/
   }
   .pls_minus.minus-info::after {
@@ -969,27 +970,27 @@
     max-width: 100% !important;
   }
   .main_header .top_search .proinput input.orig {
-    color: #7A8080 !important;
+    color: #7a8080 !important;
     font-size: 16px !important;
   }
   .main_header .top_search .proinput ::-webkit-input-placeholder {
-    color: #7A8080 !important;
+    color: #7a8080 !important;
     font-size: 16px !important;
   }
   .main_header .top_search .proinput ::-moz-placeholder {
-    color: #7A8080 !important;
+    color: #7a8080 !important;
     font-size: 16px !important;
   }
   .main_header .top_search .proinput :-ms-input-placeholder {
-    color: #7A8080 !important;
+    color: #7a8080 !important;
     font-size: 16px !important;
   }
   .main_header .top_search .proinput :-moz-placeholder {
-    color: #7A8080 !important;
+    color: #7a8080 !important;
     font-size: 16px !important;
   }
   .main_header .top_search .innericon svg {
-    fill: #7A8080 !important;
+    fill: #7a8080 !important;
   }
   header .searchbardiv {
     max-width: 100%;
@@ -1023,7 +1024,7 @@
     background: #ffffff !important;
   }
   #top-header .nav_bottom .mega-menu-wrap .max-mega-menu > li {
-    border-bottom: 1px solid #A8A8A8 !important;
+    border-bottom: 1px solid #a8a8a8 !important;
   }
   #top-header .nav_bottom .mega-menu-wrap .max-mega-menu > li > a {
     line-height: 50px !important;
@@ -1078,7 +1079,7 @@
   }
   #top-header #navbarResponsive .nav_bottom .mega-menu-wrap ul.max-mega-menu {
     position: relative !important;
-    border-bottom: 1px solid #A8A8A8 !important;
+    border-bottom: 1px solid #a8a8a8 !important;
   }
   #top-header #navbarResponsive .nav_bottom .mega-menu-wrap ul.max-mega-menu > li {
     position: static !important;
@@ -1098,7 +1099,7 @@
     padding-top: 0px !important;
   }
   #top-header #navbarResponsive .nav_bottom .back-div {
-    color: #43546A;
+    color: #43546a;
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
     background: #eee;
@@ -1117,7 +1118,7 @@
   }
   #top-header #navbarResponsive .nav_bottom .head_drop {
     margin-left: 0px;
-    border-bottom: 1px solid #A8A8A8;
+    border-bottom: 1px solid #a8a8a8;
   }
   #top-header #navbarResponsive .nav_bottom .head_drop .dropdown .btn {
     background: none;

@@ -34,7 +34,7 @@ h6,
 h1,
 .h1 {
   font-size: 54px;
-  font-weight: 800;
+  font-weight: 900;
   color: $black;
   font-family: $nunito;
 }
@@ -42,7 +42,7 @@ h1,
 h2,
 .h2 {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 900;
   color: $black;
   font-family: $nunito;
 }
@@ -50,7 +50,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 900;
   color: $black;
   font-family: $nunito;
 }
@@ -58,7 +58,7 @@ h3,
 h4,
 .h4 {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 800;
   color: $black;
   font-family: $nunito;
 }
@@ -397,7 +397,7 @@ label.title {
   .top_header_cont {
     margin-left: auto;
     z-index: 9;
-    padding-top: 8px;
+    // padding-top: 8px;
   }
   .navbar {
     ul {
@@ -445,7 +445,7 @@ label.title {
       padding-right: 10px;
       padding-left: 20px;
       a {
-        color: $black;
+        color: $gray;
         font-size: 15px;
         padding: 20px 12px;
         display: inline-block;
@@ -1040,7 +1040,7 @@ label.title {
     }
   }
   h2 {
-    font-size: 52px;
+    font-size: 54px;
     color: $white;
     line-height: normal;
     font-size: 900;
@@ -1148,7 +1148,7 @@ label.title {
         opacity: 0;
         display: none;
       }
-      &:hover {
+      &.active {
         background: #f6f4f1;
         .navblock_icon {
           display: none;
@@ -1167,6 +1167,12 @@ label.title {
             color: $black;
             &::after {
               content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><mask id="mask0_8131_2915" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect y="24" width="24" height="24" transform="rotate(-90 0 24)" fill="black"/></mask><g mask="url(%23mask0_8131_2915)"><path d="M4 13L16.175 13L10.575 18.6L12 20L20 12L12 4L10.575 5.4L16.175 11L4 11L4 13Z" fill="black"/></g></svg>');
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+            &:not(:last-child) {
+              margin-bottom: 13px;
             }
           }
         }
@@ -1198,6 +1204,20 @@ label.title {
   .padding-40 {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .customCol-9 {
+    @media (min-width: 1200px) {
+        -ms-flex: 0 0 72%;
+        flex: 0 0 72%;
+        max-width: 72%;
+    }
+  }
+  .customCol-3 {
+    @media (min-width: 1200px) {
+        -ms-flex: 0 0 28%;
+        flex: 0 0 28%;
+        max-width: 28%;
+    }
   }
   .left {
     // margin-bottom: 24px;
@@ -1583,6 +1603,9 @@ label.title {
 .footer {
   position: relative;
   background: $lightgray;
+  a{
+    text-decoration: underline !important;
+  }
   .footer-content {
     display: grid;
     gap: 54px;
@@ -2717,7 +2740,6 @@ h2 + .expand_img_grid {
     background: $white;
     box-shadow: 0px 0px 3px #00000029;
     border: 1px solid #e8e9ea;
-    padding: 48px;
   }
   .expanding-container.expanded,
   .expanding-grid .expanding-container:target {
@@ -2756,6 +2778,7 @@ h2 + .expand_img_grid {
   .expand-content {
     margin: 0 auto;
     max-width: 900px;
+    padding: 48px 0;
   }
   .plus-minus_icon {
     position: relative;
@@ -2811,7 +2834,7 @@ h2 + .expand_img_grid {
     font-size: 24px;
   }
   .btn_sm {
-    min-width: 180px;
+    min-width: 155px;
     margin-top: 24px;
   }
   .search404 {
@@ -3077,6 +3100,7 @@ h2 + .expand_img_grid {
     }
     .acco_sign {
       img {
+        filter: brightness(0) saturate(100%) invert(32%) sepia(9%) saturate(3506%) hue-rotate(52deg) brightness(112%) contrast(74%);
       }
     }
   }
