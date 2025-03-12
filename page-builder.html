@@ -112,6 +112,7 @@
   </header>
 	<div class="main_wrapper" style="">
 		<div class="page_title">
+			<img src="./img/banner.png" alt="banner">
 			<h1>Page Builder Content</h1>
 		</div>
 		<div class="middle_wrap">
@@ -1131,6 +1132,7 @@
 	<script src="js/expand.js "></script>
 	<script src="js/owl.carousel.min.js "></script>
 	<script src="js/owlmain.js "></script>
+	<script src="js/custom.js "></script>
 	<script>
 		(function ($) {
 			/* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
@@ -1153,20 +1155,6 @@
 			});
 		})(jQuery);
 	</script>
-		<script>
-      function setHeroHeight() {
-        var headerHeight = $("header").outerHeight();// Get the height 
-        $(".main_wrapper,.main_banner").css("padding-top", headerHeight + "px"); // Set the height to the hero section
-      }
-  
-      // Run on page load
-      setHeroHeight();
-  
-      // Run on window resize
-      $(window).resize(function () {
-        setHeroHeight();
-      });
-    </script>
 </body>
 
 </html>
