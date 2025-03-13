@@ -1837,7 +1837,6 @@ label.title {
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
-  text-decoration: underline;
 }
 .doc_block img {
   margin-right: 8px;
@@ -3056,17 +3055,22 @@ h2 + .expand_img_grid {
 }
 
 .event-detail {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .event-detail h1 {
   font-size: 34px;
   margin-bottom: 25px;
 }
 .event-detail .category {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 700;
+  line-height: normal;
   color: #414141;
-  margin-bottom: 15px;
+  font-weight: 700;
+  color: #000;
 }
 .event-detail .canel-info {
   color: #b61717;
@@ -3077,21 +3081,24 @@ h2 + .expand_img_grid {
   margin-bottom: 15px;
 }
 .event-detail .location strong {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+}
+.event-detail .location a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .event-detail .document_era {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .event-detail .document_era a {
-  margin-bottom: 15px;
-}
-.event-detail .org_info {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  margin-bottom: 19px;
 }
 .event-detail .org_info .h3 {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .event-detail .evt_img_info {
   text-align: center;

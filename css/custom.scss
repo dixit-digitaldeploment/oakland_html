@@ -1207,16 +1207,16 @@ label.title {
   }
   .customCol-9 {
     @media (min-width: 1200px) {
-        -ms-flex: 0 0 72%;
-        flex: 0 0 72%;
-        max-width: 72%;
+      -ms-flex: 0 0 72%;
+      flex: 0 0 72%;
+      max-width: 72%;
     }
   }
   .customCol-3 {
     @media (min-width: 1200px) {
-        -ms-flex: 0 0 28%;
-        flex: 0 0 28%;
-        max-width: 28%;
+      -ms-flex: 0 0 28%;
+      flex: 0 0 28%;
+      max-width: 28%;
     }
   }
   .left {
@@ -1603,7 +1603,7 @@ label.title {
 .footer {
   position: relative;
   background: $lightgray;
-  a{
+  a {
     text-decoration: underline !important;
   }
   .footer-content {
@@ -1986,7 +1986,7 @@ label.title {
   font-weight: 700;
   margin-bottom: 10px;
   @include roboto;
-  text-decoration: underline;
+  // text-decoration: underline;
   img {
     margin-right: 8px;
     max-width: 24px;
@@ -3100,7 +3100,8 @@ h2 + .expand_img_grid {
     }
     .acco_sign {
       img {
-        filter: brightness(0) saturate(100%) invert(32%) sepia(9%) saturate(3506%) hue-rotate(52deg) brightness(112%) contrast(74%);
+        filter: brightness(0) saturate(100%) invert(32%) sepia(9%) saturate(3506%) hue-rotate(52deg) brightness(112%)
+          contrast(74%);
       }
     }
   }
@@ -3348,16 +3349,16 @@ h2 + .expand_img_grid {
 
 //Event Detil page
 .event-detail {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   h1 {
     font-size: 34px;
     margin-bottom: 25px;
   }
   .category {
+    @include meta;
     font-weight: 700;
-    color: $gray;
-    margin-bottom: 15px;
+    color: #000;
   }
   .canel-info {
     color: #b61717;
@@ -3369,21 +3370,28 @@ h2 + .expand_img_grid {
   }
   .location {
     strong {
-      padding-bottom: 5px;
+      padding-bottom: 8px;
+    }
+    a {
+      font-family: $roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
     }
   }
   .document_era {
     padding-top: 10px;
     padding-bottom: 10px;
     a {
-      margin-bottom: 15px;
+      margin-bottom: 19px;
     }
   }
   .org_info {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    // padding-top: 10px;
+    // padding-bottom: 20px;
     .h3 {
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
   }
   .evt_img_info {
