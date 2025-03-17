@@ -4183,7 +4183,7 @@ h2 + .expand_img_grid {
 //Procurment
 //Procurment
 .proc_wrap {
-  padding-bottom: 50px;
+  padding: 32px 0;
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -4191,42 +4191,101 @@ h2 + .expand_img_grid {
   .top-text {
     text-align: center;
   }
-  .proc_filter {
-    padding-top: 10px;
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: end;
-      grid-column-gap: 20px;
-      @include md {
-        grid-template-columns: 1fr 1fr;
+}
+.rfp_tabs {
+  justify-content: center;
+  border-bottom: 1px solid #494949;
+  gap: 4px;
+  .nav-item {
+    margin-bottom: 0;
+    .nav-link {
+      border-radius: 5px 5px 0px 0px;
+      background: $lightgray;
+      padding: 16px;
+      min-width: 180px;
+      font-family: $nunito;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 24px;
+      color: #000;
+      border: none;
+      &.active,
+      &:hover {
+        background: $blue;
+        color: #fff;
       }
-      .date_wrap {
-        display: grid;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.tab-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.proc_filter {
+  // padding-top: 10px;
+  form {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    grid-column-gap: 8px;
+    @include md {
+      grid-template-columns: 1fr;
+    }
+    .form-group {
+      @include md {
+        grid-column: 1 / 3;
+      }
+    }
+    .date_wrap {
+      display: grid;
+      grid-template-columns: 126px 112px;
+      grid-column-gap: 8px;
+      // .form-control {
+      //   background-image: url(.././img/calendar_month.svg);
+      //   background-position: top 10px right 12px;
+      //   background-size: 30px;
+      // }
+      select {
+        min-width: auto;
+      }
+      @include md {
+        grid-column: 1/2;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-        .form-control {
-          background-image: url(.././img/calendar_month.svg);
-          background-position: top 10px right 12px;
-          background-size: 30px;
-        }
-        @include md {
-          grid-column: 1/3;
-        }
       }
     }
     .reset {
       padding-top: 0;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
+      a {
+        display: flex;
+        align-items: center;
+        color: #000;
+      }
+      @include md {
+        grid-column: 2;
+      }
     }
   }
+ 
 }
-
+.accmain {
+  padding-top: 14px;
+}
 .acccard {
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   margin-bottom: 15px;
   .acctitle {
-    padding: 20px;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -4236,15 +4295,13 @@ h2 + .expand_img_grid {
       font-size: 16px;
     }
     h3 {
-      margin-bottom: 10px;
-      text-transform: capitalize;
+      margin-bottom: 8px;
+      color: $blue;
     }
-    h4 {
-      font-size: 16px;
-      font-weight: 700;
-      font-family: $roboto;
-      color: $gray;
-      margin-bottom: 0px;
+    .category {
+      @include meta;
+      color: #000;
+      margin: 0;
     }
     .acco_sign {
       margin-left: 15px;
@@ -4262,15 +4319,27 @@ h2 + .expand_img_grid {
     &:hover {
       h2,
       h3 {
-        color: $secondary;
+        color: $primary;
         text-decoration: underline;
       }
     }
   }
   .acc_right {
-    display: flex;
+    // display: flex;
+    padding-right: 48px;
     p {
       margin: 0px;
+      @include meta;
+      color: #000;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+    .acco_sign {
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   .document_era {
@@ -4291,6 +4360,14 @@ h2 + .expand_img_grid {
     font-weight: 600;
     padding-bottom: 10px;
     padding-top: 10px;
+  }
+  .btn_sm {
+    margin-top: 32px;
+  }
+  > * {
+    &:nth-child(n-1) {
+      margin-bottom: 0;
+    }
   }
 }
 
