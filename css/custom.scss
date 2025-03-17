@@ -4275,7 +4275,6 @@ h2 + .expand_img_grid {
       }
     }
   }
- 
 }
 .accmain {
   padding-top: 14px;
@@ -4370,6 +4369,101 @@ h2 + .expand_img_grid {
     }
   }
 }
+
+// Policies Page
+.category_sec {
+  .container {
+    max-width: 900px;
+    .img_block {
+      .h4 {
+        color: $blue;
+        margin: 0;
+        padding: 8px 0;
+      }
+      @include md{
+        margin-bottom: 15px;
+      }
+    }
+    a {
+      &:hover {
+        .h4 {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.sort_filter {
+  margin-bottom: 24px;
+  form {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    select {
+      min-width: 260px;
+    }
+    @include md{
+      padding-bottom: 0px;
+      select{
+        min-width: auto;
+      }
+    }
+  }
+}
+.policy_filter {
+  .reset {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    a {
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+    // @include md {
+    //   grid-column: 2;
+    // }
+  }
+}
+.policy-directory-list {
+  >a{
+    text-decoration: none;
+    display: block;
+    &:hover{
+      .h4{
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }
+  }
+  .policy-single {
+    display: flex;
+    gap: 16px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    .policy-image {
+      flex: 0 0 114px;
+      width: 100%;
+    }
+    .policy-detail {
+      padding: 16px;
+      .h4 {
+        color: inherit;
+        margin-bottom: 8px;
+      }
+      .category {
+        @include meta;
+        color: #000;
+      }
+    }
+    @include md{
+      flex-direction: column;
+    }
+  }
+}
+// Policies Page end
 
 //General fix with page builder
 .aligncenter {
